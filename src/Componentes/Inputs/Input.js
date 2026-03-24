@@ -4,7 +4,7 @@ export const Input = (information) => {
     return(
         <div className="compose-text">
             <label> {information.label} </label>
-            <input placeholder="enter your name"></input>
+            <input placeholder={information.placeholder}></input>
         </div>
     )
 }
