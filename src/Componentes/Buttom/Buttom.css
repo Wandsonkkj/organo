@@ -1,0 +1,18 @@
+.butt {
+    width: 18%;
+    height: 10%;
+    font-size: 15px;
+    margin: 7px 10px 20px 10px;
+    transform: scale(1.08);
+    background-color: rgb(98, 98, 238);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.butt:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1px);
+}

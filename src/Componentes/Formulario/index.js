@@ -1,3 +1,4 @@
+import Bt from "../Buttom"
 import Input from "../Inputs"
 import "./Formulario.css"
 
@@ -9,6 +10,8 @@ const Forms = () => {
                 <Input label="Name" placeholder="Enter your name" />
                 <Input label="Position" placeholder="Enter your position" />
                 <Input label="Image" placeholder="Enter the adress for image " />
+                <Bt></Bt>
+
             </form>
         </section>
     )
