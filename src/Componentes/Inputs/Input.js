@@ -4,7 +4,7 @@ export const Input = (information) => {
     return(
         <div className="compose-text">
             <label> {information.label} </label>
-            <input placeholder={information.placeholder}></input>
+            <input required={information.mandatory} placeholder={information.placeholder}></input>
         </div>
     )
 }

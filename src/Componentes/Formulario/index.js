@@ -13,18 +13,25 @@ const Forms = () => {
         'Mobile',
         'Innovation and management'
     ]
+
+    const toSave = (event) => {
+        event.preventDefault() //faz com q o butão saia do seu comportamento padrão que é redirecionar para a propria pagina 
+        console.log('esta salvo')
+    }
+
     return (
-        <section className = "formss">
-            <form>
+        <section className="formss">
+            <form onSubmit={toSave}>
                 <h2>Fill in the information to creat a card form the employee</h2>
-                <Input label="Name" placeholder="Enter your name" />
-                <Input label="Position" placeholder="Enter your position" />
+                <Input mandatory={true} label="Name" placeholder="Enter your name" />
+                <Input mandatory={true} label="Position" placeholder="Enter your position" />
                 <Input label="Image" placeholder="Enter the adress for image " />
-                <Lista 
-                item={times}
-                label = "Time"
+                <Lista
+                    mandatory={true}
+                    item={times}
+                    label="Time"
                 />
-                <Bt button="Creat card"/>
+                <Bt button="Creat card" />
 
             </form>
         </section>
